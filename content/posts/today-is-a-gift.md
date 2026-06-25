@@ -1,5 +1,5 @@
 ---
-title: 'Today is a gift'
+title: '今日是礼物'
 date: '2026-06-25T23:00:00+08:00'
 draft: false
 slug: 'today-is-a-gift'

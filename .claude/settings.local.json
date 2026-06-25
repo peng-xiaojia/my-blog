@@ -22,7 +22,15 @@
       "Bash(git config *)",
       "Bash(env)",
       "Bash(ssh *)",
-      "Bash(curl -s --connect-timeout 5 https://peng-xiaojia.github.io/my-blog/)"
+      "Bash(curl -s --connect-timeout 5 https://peng-xiaojia.github.io/my-blog/)",
+      "Bash(git push *)",
+      "Bash(export T=735fdca0e006a6b01667bb299b5e4f6400b26add)",
+      "Bash(curl -s -X POST http://121.43.230.181:8102/api/v1/user/repos -H 'Authorization: token 735fdca0e006a6b01667bb299b5e4f6400b26add' -H 'Content-Type: application/json' -d '{\"name\":\"my-blog\",\"description\":\"个人博客\",\"private\":false}')",
+      "Bash(rm G:/auto/workCode/hugostart/scripts/gitea-init.sh)",
+      "Bash(git -C G:/auto/workCode/hugostart add -A)",
+      "Bash(git -C G:/auto/workCode/hugostart commit -m \"chore: 清理临时脚本\")",
+      "Bash(git -C G:/auto/workCode/hugostart push gitea master)",
+      "Bash(git -C G:/auto/workCode/hugostart push origin master)"
     ]
   }
 }

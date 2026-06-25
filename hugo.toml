@@ -4,7 +4,7 @@
 baseURL = 'https://peng-xiaojia.github.io/my-blog/'  # 自定义域名时修改此处
 locale = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
-title = '我的博客'
+title = 'xiaojia'
 theme = 'PaperMod'
 
 # 启用 emoji 支持
@@ -34,16 +34,24 @@ summaryLength = 120                    # 摘要长度（字数）
 # PaperMod 主题参数
 # ============================================
 [params]
-  # --- 首页模式 ---
-  # profileMode: 个人介绍页 + 文章列表
-  # homeInfoMode: 简单文字介绍 + 文章列表
-  # 不设置则只显示文章列表
-  [params.homeInfoParams]
-    title = '你好，欢迎来到我的博客 👋'
-    content = '这里记录我的学习、思考和生活的点滴。'
+  # --- 首页模式: 个人名片 ---
+  [params.profileMode]
+    enabled = true
+    title = "Hi, I'm JJia 👋"
+    subtitle = '一个热爱技术和生活的博主'
+    imageUrl = '/avatar.png'
+    imageWidth = 150
+    imageHeight = 150
+    imageTitle = 'panda avatar'
+    [[params.profileMode.buttons]]
+      name = '📝 全部文章'
+      url = '/posts'
+    [[params.profileMode.buttons]]
+      name = '👋 关于我'
+      url = '/about'
 
   # --- 作者信息 ---
-  author = '你的名字'
+  author = 'JJia'
   description = '一个热爱技术和生活的博主'
 
   # --- 日期格式 ---
@@ -72,14 +80,13 @@ summaryLength = 120                    # 摘要长度（字数）
     threshold = 0.4
     minMatchCharLength = 0
 
-  # --- 社交链接 (可选) ---
-  # socialIcons:
-  #   - name = 'github'
-  #     url = 'https://github.com/你的用户名'
-  #   - name = 'email'
-  #     url = 'mailto:your@email.com'
-  #   - name = 'twitter'
-  #     url = 'https://twitter.com/你的用户名'
+  # --- 社交链接 ---
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/peng-xiaojia'
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:peng-xiaojia@users.noreply.github.com'
 
   # --- 评论系统 (可选，后续可开启) ---
   # comments = true

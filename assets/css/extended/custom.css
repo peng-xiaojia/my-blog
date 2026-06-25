@@ -1,0 +1,165 @@
+/* ============================================
+   xiaojia 博客 - 自定义样式美化
+   ============================================ */
+
+/* --- 首页个人名片 --- */
+.profile_inner {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(168, 85, 247, 0.05));
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.profile_inner:hover {
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
+}
+
+.profile_inner img {
+  border-radius: 50%;
+  border: 3px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile_inner img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.15);
+}
+
+.profile_inner h1 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile_inner > span {
+  color: var(--secondary);
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+  display: inline-block;
+}
+
+/* --- 社交图标美化 --- */
+.social-icons a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-2px);
+  color: #6366f1;
+}
+
+/* --- 文章列表卡片化 --- */
+article.post-entry {
+  background: var(--entry);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-left: 3px solid transparent;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 0.8rem;
+  transition: all 0.25s ease;
+}
+
+article.post-entry:hover {
+  border-left-color: #6366f1;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  transform: translateX(4px);
+}
+
+article.post-entry .entry-header h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+article.post-entry .entry-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+/* --- 文章元信息（日期、阅读时间）--- */
+article.post-entry .entry-footer {
+  font-size: 0.82rem;
+  color: var(--secondary);
+  opacity: 0.8;
+}
+
+/* --- 分页导航 --- */
+.pagination a {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+}
+
+/* --- 暗色模式适配 --- */
+.dark .profile_inner {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(168, 85, 247, 0.06));
+  border-color: rgba(99, 102, 241, 0.15);
+}
+
+.dark .profile_inner h1 {
+  background: linear-gradient(135deg, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark article.post-entry {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.dark article.post-entry:hover {
+  border-left-color: #818cf8;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dark .social-icons a:hover {
+  color: #818cf8;
+}
+
+/* --- 名片按钮 --- */
+.profile_inner .buttons .button {
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  color: #6366f1;
+}
+
+.profile_inner .buttons .button:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: #6366f1;
+  transform: translateY(-1px);
+}
+
+.dark .profile_inner .buttons .button {
+  color: #818cf8;
+  border-color: rgba(129, 140, 248, 0.3);
+}
+
+.dark .profile_inner .buttons .button:hover {
+  background: rgba(129, 140, 248, 0.15);
+  border-color: #818cf8;
+}
+
+/* --- 搜索框圆角 --- */
+#searchbox input {
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+}
+
+/* --- 页脚 --- */
+footer {
+  margin-top: 2rem;
+}

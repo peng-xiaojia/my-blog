@@ -30,7 +30,12 @@
       "Bash(git -C G:/auto/workCode/hugostart add -A)",
       "Bash(git -C G:/auto/workCode/hugostart commit -m \"chore: 清理临时脚本\")",
       "Bash(git -C G:/auto/workCode/hugostart push gitea master)",
-      "Bash(git -C G:/auto/workCode/hugostart push origin master)"
+      "Bash(git -C G:/auto/workCode/hugostart push origin master)",
+      "Bash(hugo server *)",
+      "Bash(curl *)",
+      "Bash(xargs ls -la)",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(qlmanage -t -s 300 -o /Users/jjia/Desktop/jjiacode/blog/my-blog/static/ /Users/jjia/Desktop/jjiacode/blog/my-blog/static/avatar.svg)"
     ]
   }
 }

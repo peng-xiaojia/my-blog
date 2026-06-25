@@ -10,11 +10,11 @@ series: []
 
 ## 关于我 👨‍💻
 
-你好！我是 **[你的名字]**，一名热爱技术的开发者/学生/设计师……
+你好！我是 **JJia**，一名热爱技术和生活的博主。
 
 在这里，我会分享：
 
-- 📖 学习笔记和技术文章
+- 📖 技术文章和学习笔记
 - 💡 项目经验和心得体会
 - 🌈 生活中的思考与感悟
 
@@ -24,8 +24,8 @@ series: []
 
 ## 联系我
 
-- 📧 Email: your-email@example.com
-- 🐙 GitHub: [你的用户名](https://github.com/你的用户名)
+- 📧 Email: peng-xiaojia@users.noreply.github.com
+- 🐙 GitHub: [peng-xiaojia](https://github.com/peng-xiaojia)
 
 ---
 

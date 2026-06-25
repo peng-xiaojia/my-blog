@@ -34,21 +34,7 @@ summaryLength = 120                    # 摘要长度（字数）
 # PaperMod 主题参数
 # ============================================
 [params]
-  # --- 首页模式: 个人名片 ---
-  [params.profileMode]
-    enabled = true
-    title = "Hi, I'm JJia 👋"
-    subtitle = '一个热爱技术和生活的博主'
-    imageUrl = '/avatar.png'
-    imageWidth = 150
-    imageHeight = 150
-    imageTitle = 'panda avatar'
-    [[params.profileMode.buttons]]
-      name = '📝 全部文章'
-      url = '/posts'
-    [[params.profileMode.buttons]]
-      name = '👋 关于我'
-      url = '/about'
+  # --- 首页模式: 纯文章列表 ---
 
   # --- 作者信息 ---
   author = 'JJia'

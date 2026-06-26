@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec"/>
+      <stop offset="50%" style="stop-color:#f3e5f5"/>
+      <stop offset="100%" style="stop-color:#e8eaf6"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffcc80"/>
+      <stop offset="100%" style="stop-color:#ffab91"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <!-- 太阳 -->
+  <circle cx="900" cy="100" r="70" fill="url(#sun)" opacity="0.7"/>
+  <!-- 小猫咪 1 -->
+  <g transform="translate(300, 350)">
+    <!-- 身体 -->
+    <ellipse cx="0" cy="30" rx="45" ry="35" fill="#ffcc80"/>
+    <!-- 头 -->
+    <circle cx="0" cy="-20" r="40" fill="#ffcc80"/>
+    <!-- 耳朵 -->
+    <polygon points="-35,-40 -25,-75 -10,-45" fill="#ffcc80"/>
+    <polygon points="35,-40 25,-75 10,-45" fill="#ffcc80"/>
+    <!-- 内耳 -->
+    <polygon points="-30,-45 -25,-65 -15,-45" fill="#ffab91"/>
+    <polygon points="30,-45 25,-65 15,-45" fill="#ffab91"/>
+    <!-- 眼睛 -->
+    <circle cx="-16" cy="-22" r="6" fill="#5d4037"/>
+    <circle cx="16" cy="-22" r="6" fill="#5d4037"/>
+    <circle cx="-14" cy="-24" r="2" fill="#fff"/>
+    <circle cx="18" cy="-24" r="2" fill="#fff"/>
+    <!-- 鼻子 -->
+    <polygon points="0,-12 -4,-8 4,-8" fill="#ff8a80"/>
+    <!-- 嘴 -->
+    <path d="M-6,-6 Q0,-2 6,-6" fill="none" stroke="#5d4037" stroke-width="1.5"/>
+    <!-- 胡须 -->
+    <line x1="-25" y1="-12" x2="-45" y2="-18" stroke="#bdbdbd" stroke-width="1"/>
+    <line x1="-25" y1="-8" x2="-45" y2="-8" stroke="#bdbdbd" stroke-width="1"/>
+    <line x1="25" y1="-12" x2="45" y2="-18" stroke="#bdbdbd" stroke-width="1"/>
+    <line x1="25" y1="-8" x2="45" y2="-8" stroke="#bdbdbd" stroke-width="1"/>
+    <!-- 尾巴 -->
+    <path d="M40,40 Q70,20 65,5" fill="none" stroke="#ffcc80" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- 小猫咪 2 (小) -->
+  <g transform="translate(500, 380) scale(0.6)">
+    <ellipse cx="0" cy="30" rx="45" ry="35" fill="#e1bee7"/>
+    <circle cx="0" cy="-20" r="40" fill="#e1bee7"/>
+    <polygon points="-35,-40 -25,-75 -10,-45" fill="#e1bee7"/>
+    <polygon points="35,-40 25,-75 10,-45" fill="#e1bee7"/>
+    <circle cx="-16" cy="-22" r="6" fill="#4a148c"/>
+    <circle cx="16" cy="-22" r="6" fill="#4a148c"/>
+    <circle cx="-14" cy="-24" r="2" fill="#fff"/>
+    <circle cx="18" cy="-24" r="2" fill="#fff"/>
+    <polygon points="0,-12 -4,-8 4,-8" fill="#ce93d8"/>
+    <path d="M-6,-6 Q0,-2 6,-6" fill="none" stroke="#4a148c" stroke-width="1.5"/>
+  </g>
+  <!-- 小猫咪 3 -->
+  <g transform="translate(750, 360) scale(0.7)">
+    <ellipse cx="0" cy="30" rx="45" ry="35" fill="#b3e5fc"/>
+    <circle cx="0" cy="-20" r="40" fill="#b3e5fc"/>
+    <polygon points="-35,-40 -25,-75 -10,-45" fill="#b3e5fc"/>
+    <polygon points="35,-40 25,-75 10,-45" fill="#b3e5fc"/>
+    <circle cx="-16" cy="-22" r="6" fill="#01579b"/>
+    <circle cx="16" cy="-22" r="6" fill="#01579b"/>
+    <circle cx="-14" cy="-24" r="2" fill="#fff"/>
+    <circle cx="18" cy="-24" r="2" fill="#fff"/>
+    <polygon points="0,-12 -4,-8 4,-8" fill="#81d4fa"/>
+    <path d="M-6,-6 Q0,-2 6,-6" fill="none" stroke="#01579b" stroke-width="1.5"/>
+  </g>
+  <!-- 装饰圆点 -->
+  <circle cx="150" cy="500" r="30" fill="#fff9c4" opacity="0.5"/>
+  <circle cx="1000" cy="500" r="40" fill="#c8e6c9" opacity="0.5"/>
+  <circle cx="600" cy="520" r="25" fill="#f8bbd0" opacity="0.5"/>
+</svg>

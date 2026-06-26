@@ -1,81 +1,178 @@
 # ============================================
-# Hugo 基础配置
+# Hugo 基础配置 (Blowfish 主题)
 # ============================================
-baseURL = 'https://peng-xiaojia.github.io/my-blog/'  # 自定义域名时修改此处
+baseURL = 'https://peng-xiaojia.github.io/my-blog/'
+theme = 'blowfish'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
-title = 'xiaojia'
-theme = 'PaperMod'
-
-# 启用 emoji 支持
+title = 'XiaoJia'
+enableRobotsTXT = true
 enableEmoji = true
+summaryLength = 30
+
+[security]
+  [security.http]
+    urls = ['(?i)^https?://[a-z0-9]', '(?i)localhost']
+    methods = ['(?i)GET|POST']
 
 # ============================================
 # 分页
 # ============================================
-paginate = 10                          # 每页显示 10 篇文章
-summaryLength = 120                    # 摘要长度（字数）
+[pagination]
+  pagerSize = 10
 
 # ============================================
-# 代码高亮 (Chroma)
+# 分类 & 标签
 # ============================================
-[markup]
-  [markup.highlight]
-    noClasses = false                  # 使用 CSS 类（主题会提供样式）
-    style = 'monokai'
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+  series = 'series'
 
 # ============================================
 # 文章永久链接
 # ============================================
 [permalinks]
-  posts = '/:year/:month/:slug/'       # 示例: /2026/06/hello-world/
+  posts = '/:year/:month/:slug/'
 
 # ============================================
-# PaperMod 主题参数
+# 相关文章推荐
+# ============================================
+[related]
+  threshold = 0
+  toLower = false
+  [[related.indices]]
+    name = 'tags'
+    weight = 100
+  [[related.indices]]
+    name = 'categories'
+    weight = 100
+  [[related.indices]]
+    name = 'date'
+    weight = 10
+
+# ============================================
+# 图片处理
+# ============================================
+[imaging]
+  anchor = 'Center'
+
+# ============================================
+# Blowfish 主题参数
 # ============================================
 [params]
-  # --- 首页模式: 纯文章列表 ---
+  # --- 配色 ---
+  colorScheme = 'blowfish'
+  defaultAppearance = 'dark'
+  autoSwitchAppearance = true
 
-  # --- 作者信息 ---
-  author = 'JJia'
-  description = '一个热爱技术和生活的博主'
+  # --- 功能 ---
+  enableSearch = true
+  enableCodeCopy = true
+  enableStructuredBreadcrumbs = true
+  highlightCurrentMenuArea = true
+  smartTOC = true
+  smartTOCHideUnfocusedChildren = false
 
-  # --- 日期格式 ---
-  dateFormat = '2006-01-02'
+  # --- 默认图片 ---
+  defaultBackgroundImage = '/img/background.svg'
+  defaultFeaturedImage = '/img/featured.svg'
 
-  # --- 主题切换 ---
-  defaultTheme = 'auto'                # auto / light / dark
-  disableThemeToggle = false
+  # --- 头部 ---
+  [params.header]
+    layout = 'fixed-gradient'
 
-  # --- 功能开关 ---
-  showReadingTime = true               # 阅读时间
-  showWordCount = true                 # 字数统计
-  showPostNavLinks = true              # 上一篇/下一篇导航
-  showBreadcrumbs = true               # 面包屑导航
-  showCodeCopyButtons = true           # 代码块复制按钮
-  showToc = true                       # 目录
-  hideSummary = false                  # 列表页显示摘要
-  hideFooter = false
+  # --- 底部 ---
+  [params.footer]
+    showMenu = true
+    showCopyright = true
+    showThemeAttribution = true
+    showAppearanceSwitcher = true
+    showScrollToTop = true
 
-  # --- 搜索 ---
-  [params.fuseOpts]                     # Fuse.js 搜索配置
-    isCaseSensitive = false
-    shouldSort = true
-    location = 0
-    distance = 1000
-    threshold = 0.4
-    minMatchCharLength = 0
+  # --- 首页 ---
+  [params.homepage]
+    layout = 'background'
+    showRecent = true
+    showRecentItems = 6
+    showMoreLink = true
+    showMoreLinkDest = 'posts'
+    cardView = true
+    cardViewScreenWidth = false
+    layoutBackgroundBlur = true
 
-  # --- 社交链接 ---
-  [[params.socialIcons]]
+  # --- 文章列表页 ---
+  [params.list]
+    showHero = true
+    heroStyle = 'background'
+    layoutBackgroundBlur = true
+    layoutBackgroundHeaderSpace = true
+    showBreadcrumbs = true
+    showSummary = false
+    showTableOfContents = true
+    showCards = true
+    cardView = true
+    cardViewScreenWidth = false
+    groupByYear = false
+
+  # --- 文章详情页 ---
+  [params.article]
+    showDate = true
+    showDateUpdated = false
+    showAuthor = true
+    showHero = true
+    heroStyle = 'thumbAndBackground'
+    layoutBackgroundBlur = true
+    layoutBackgroundHeaderSpace = true
+    showBreadcrumbs = true
+    showDraftLabel = true
+    showEdit = false
+    showPagination = true
+    showReadingTime = true
+    showWordCount = true
+    showTableOfContents = true
+    showRelatedContent = true
+    relatedContentLimit = 3
+    showTaxonomies = true
+    showCategories = true
+    showTags = true
+    showAuthorsBadges = true
+    sharingLinks = ['email', 'linkedin', 'twitter']
+    showZenMode = true
+
+  # --- 分类/标签页 ---
+  [params.taxonomy]
+    showHero = true
+    heroStyle = 'background'
+    layoutBackgroundBlur = true
+    showBreadcrumbs = true
+    showTableOfContents = true
+    cardView = true
+
+  [params.term]
+    showHero = true
+    heroStyle = 'background'
+    layoutBackgroundBlur = true
+    showBreadcrumbs = true
+    showTableOfContents = true
+    cardView = true
+
+  # --- SEO ---
+  [params.seo]
+    metaDescriptionOrder = ['summary', 'description', 'site']
+
+  # --- 作者 ---
+  [params.author]
+    name = 'JJia'
+    headline = '一个热爱技术和生活的博主'
+  [[params.author.links]]
     name = 'github'
     url = 'https://github.com/peng-xiaojia'
-  [[params.socialIcons]]
+    icon = 'github'
+  [[params.author.links]]
     name = 'email'
     url = 'mailto:peng-xiaojia@users.noreply.github.com'
-
-  # --- 评论系统 (可选，后续可开启) ---
-  # comments = true
+    icon = 'email'
 
 # ============================================
 # 主导航菜单
@@ -86,19 +183,31 @@ summaryLength = 120                    # 摘要长度（字数）
   weight = 10
 
 [[menu.main]]
-  name = '关于'
-  pageRef = '/about'
+  name = '分类'
+  pageRef = '/categories'
+  weight = 20
+
+[[menu.main]]
+  name = '标签'
+  pageRef = '/tags'
   weight = 30
 
 [[menu.main]]
-  name = '搜索'
-  pageRef = '/search'
+  name = '关于'
+  pageRef = '/about'
   weight = 40
 
 # ============================================
-# 分类 & 标签
+# 底部菜单
 # ============================================
-[taxonomies]
-  category = 'categories'
-  tag = 'tags'
-  series = 'series'
+[[menu.footer]]
+  name = 'GitHub'
+  url = 'https://github.com/peng-xiaojia'
+  weight = 10
+
+# ============================================
+# 代码高亮
+# ============================================
+[markup.highlight]
+  noClasses = false
+  style = 'monokai'

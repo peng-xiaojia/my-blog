@@ -35,7 +35,8 @@
       "Bash(curl *)",
       "Bash(xargs ls -la)",
       "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
-      "Bash(qlmanage -t -s 300 -o /Users/jjia/Desktop/jjiacode/blog/my-blog/static/ /Users/jjia/Desktop/jjiacode/blog/my-blog/static/avatar.svg)"
+      "Bash(qlmanage -t -s 300 -o /Users/jjia/Desktop/jjiacode/blog/my-blog/static/ /Users/jjia/Desktop/jjiacode/blog/my-blog/static/avatar.svg)",
+      "WebFetch(domain:blowfish.page)"
     ]
   }
 }

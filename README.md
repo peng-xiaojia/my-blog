@@ -2,9 +2,9 @@
 
 > 基于 [Hugo](https://gohugo.io/) + [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 的个人博客。
 
-[![Deploy](https://github.com/peng-xiaojia/my-blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/peng-xiaojia/my-blog/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/peng-xiaojia/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/peng-xiaojia/blog/actions/workflows/deploy.yml)
 
-🔗 **线上地址**：https://peng-xiaojia.github.io/my-blog/
+🔗 **线上地址**：https://peng-xiaojia.github.io/blog/
 
 ---
 
@@ -36,14 +36,14 @@
 
 ```bash
 # 克隆仓库（Gitea）
-git clone http://121.43.230.181:8102/jjia/my-blog.git
-cd my-blog
+git clone http://121.43.230.181:8102/jjia/blog.git
+cd blog
 
 # 拉取主题
 git submodule update --init --recursive
 
 # 添加 GitHub 远程（部署用）
-git remote add origin git@github.com:peng-xiaojia/my-blog.git
+git remote add origin git@github.com:peng-xiaojia/blog.git
 ```
 
 **Windows 用户**：双击运行 `scripts\setup.bat` 自动安装 Hugo。
@@ -77,7 +77,7 @@ scripts\publish.bat "新文章标题"      # Windows
 ## 项目结构
 
 ```
-my-blog/
+blog/
 ├── content/                 # 文章目录（Markdown）
 │   ├── posts/               #   博客文章
 │   ├── about.md             #   关于页

@@ -4,8 +4,8 @@
 
 基于 **Hugo** 静态网站生成器 + **PaperMod** 主题的个人博客。内容使用 Markdown 编写，通过 Git 管理版本，CI/CD 自动部署到 GitHub Pages。
 
-- **仓库地址**: <https://github.com/peng-xiaojia/my-blog>
-- **线上地址**: <https://peng-xiaojia.github.io/my-blog/>
+- **仓库地址**: <https://github.com/peng-xiaojia/blog>
+- **线上地址**: <https://peng-xiaojia.github.io/blog/>
 - **技术栈**: Hugo v0.163+ Extended, PaperMod, GitHub Actions
 
 ---
@@ -206,7 +206,7 @@ PaperMod 支持多种评论系统，在 `hugo.toml` 的 `[params]` 中添加：
 ```toml
 # Giscus（推荐，基于 GitHub Discussions）
 [params.giscus]
-  repo = 'peng-xiaojia/my-blog'
+  repo = 'peng-xiaojia/blog'
   repoId = '你的 repo ID'
   category = 'Announcements'
   categoryId = '你的 category ID'
@@ -240,10 +240,10 @@ PaperMod 支持多种评论系统，在 `hugo.toml` 的 `[params]` 中添加：
 git remote -v
 
 # 切换到 Gitea
-git remote set-url origin https://your-gitea.com/username/my-blog.git
+git remote set-url origin https://your-gitea.com/username/blog.git
 
 # 或同时保留两个远程
-git remote add gitea https://your-gitea.com/username/my-blog.git
+git remote add gitea https://your-gitea.com/username/blog.git
 git push gitea master
 ```
 

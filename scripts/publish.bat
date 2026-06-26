@@ -71,6 +71,6 @@ echo ========================================
 echo.
 echo 📦 代码已推送到:  Gitea
 echo 🚀 部署已触发:    GitHub Actions
-echo 🔗 线上地址:      https://peng-xiaojia.github.io/my-blog/
+echo 🔗 线上地址:      https://peng-xiaojia.github.io/blog/
 
 pause

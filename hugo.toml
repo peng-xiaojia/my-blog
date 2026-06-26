@@ -1,7 +1,7 @@
 # ============================================
 # Hugo 基础配置 (Blowfish 主题)
 # ============================================
-baseURL = 'https://peng-xiaojia.github.io/my-blog/'
+baseURL = 'https://peng-xiaojia.github.io/blog/'
 theme = 'blowfish'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh-cn'

@@ -1,6 +1,6 @@
 ---
 title: '读《供应链管理》有感'
-date: '2026-06-29T23:30:00+08:00'
+date: '2026-06-29T11:47:00+08:00'
 draft: false
 slug: 'supply-chain-thoughts'
 categories: ['随笔']
